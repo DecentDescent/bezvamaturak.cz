@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Baloo|Open+Sans:300,600&subset=latin-ext");
 @import "Hero";
+@import "Section";
 
 html,
 body {
@@ -9,4 +10,20 @@ body {
 body {
   background: #000;
   margin: 0;
+}
+
+h1 {
+  font-family: "Baloo", cursive;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  margin: 10px 0;
+  letter-spacing: 0.7px;
+  font-weight: 300;
 }

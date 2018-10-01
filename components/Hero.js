@@ -1,9 +1,12 @@
 export default class extends React.Component {
   render() {
     return (
-      <section className="hero">
+      <section className="hero section--color">
         <div className="hero__content">
-          <h1>Bez starostí a podle Vašich představ!</h1>
+          <h1>
+            Maturitní ples Bez starostí
+            <br />a podle Vašich představ!
+          </h1>
           <p>
             Chcete aby Váš ples byl nezapomenutelný a originální? Nechte veškeré
             vyřizování na nás a my Vám připravíme maturák na míru šitý právě
