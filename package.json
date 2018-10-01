@@ -1,0 +1,29 @@
+{
+  "name": "bezvamaturak.cz",
+  "version": "1.0.0",
+  "description": "New website for bezvamaturak.cz",
+  "main": "next.config.js",
+  "dependencies": {
+    "next": "^7.0.1",
+    "node-sass": "^4.9.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DecentDescent/bezvamaturak.cz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DecentDescent/bezvamaturak.cz/issues"
+  },
+  "homepage": "https://github.com/DecentDescent/bezvamaturak.cz#readme"
+}
