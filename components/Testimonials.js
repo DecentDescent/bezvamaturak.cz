@@ -1,7 +1,7 @@
 export default class extends React.Component {
   render() {
     return (
-      <section className="section section--light">
+      <section className="section section--light" id="reference">
         <div className="section__content">
           <h1>Reference</h1>
           <p>

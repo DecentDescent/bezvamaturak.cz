@@ -1,7 +1,7 @@
 export default class extends React.Component {
   render() {
     return (
-      <section className="section section--color section--blue">
+      <section className="section section--color section--blue" id="o-nas">
         <div className="section__content">
           <h1>O nás</h1>
           <p>
@@ -18,6 +18,7 @@ export default class extends React.Component {
             kvůli nespolupráci lidí, kteří se na organizaci plesu podílejí.
           </p>
         </div>
+        <button>Náš tým</button>
       </section>
     );
   }

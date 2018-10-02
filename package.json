@@ -4,6 +4,7 @@
   "description": "New website for bezvamaturak.cz",
   "main": "next.config.js",
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "next": "^7.0.1",
     "node-sass": "^4.9.3",
     "react": "^16.5.2",

@@ -1,0 +1,47 @@
+header.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px 10px 25px;
+  box-sizing: border-box;
+
+  .header__logo {
+    width: 200px;
+    height: 44px;
+    background: #000;
+  }
+
+  .header__navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      a {
+        padding: 10px;
+        font-family: "Open Sans", sans-serif;
+        font-size: 19px;
+        color: $color-white;
+        text-transform: uppercase;
+        border-bottom: 2px transparent solid;
+        transition: border-bottom 0.3s;
+
+        &:hover {
+          border-bottom: 2px $color-white solid;
+        }
+      }
+
+      &.cai {
+        a {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

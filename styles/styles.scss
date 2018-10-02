@@ -1,8 +1,10 @@
 $color-black: #4a4a4a;
+$color-white: #fff;
 
 @import url("https://fonts.googleapis.com/css?family=Baloo|Open+Sans:300,600&subset=latin-ext");
-@import "Hero";
+@import "Header";
 @import "Section";
+@import "Hero";
 
 html,
 body {
@@ -28,4 +30,31 @@ p {
   margin: 10px 0;
   letter-spacing: 0.7px;
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+  transition: color 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-black;
+  }
+}
+
+button {
+  margin-top: 20px;
+  appearance: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  color: $color-white;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: none;
 }

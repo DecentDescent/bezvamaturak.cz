@@ -1,7 +1,7 @@
 export default class extends React.Component {
   render() {
     return (
-      <section className="hero section--color">
+      <section className="hero section section--color">
         <div className="hero__content">
           <h1>
             Maturitní ples Bez starostí
@@ -12,6 +12,7 @@ export default class extends React.Component {
             vyřizování na nás a my Vám připravíme maturák na míru šitý právě
             Vaší třídě, Vašim požadavkům, Vašemu finančnímu rozpočtu!
           </p>
+          <button>To chci!</button>
         </div>
       </section>
     );
