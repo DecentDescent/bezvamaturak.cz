@@ -1,10 +1,14 @@
 $color-black: #4a4a4a;
 $color-white: #fff;
 
+$breakpoint-small: 640px;
+$breakpoint-medium: 850px;
+
 @import url("https://fonts.googleapis.com/css?family=Baloo|Open+Sans:300,600&subset=latin-ext");
 @import "Header";
 @import "Section";
 @import "Hero";
+@import "Dialog";
 
 html,
 body {
@@ -14,6 +18,28 @@ body {
 body {
   background: #000;
   margin: 0;
+
+  &.dialog-active {
+    overflow: hidden;
+  } /* width */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 }
 
 h1 {
@@ -22,6 +48,13 @@ h1 {
   letter-spacing: 0.7px;
   margin: 0 0 30px 0;
   text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Open Sans", cursive;
+  line-height: 1.2;
+  letter-spacing: 0.7px;
+  margin: 30px 0 15px 0;
 }
 
 p {
