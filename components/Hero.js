@@ -1,10 +1,11 @@
-export default class extends React.Component {
+export default class Hero extends React.Component {
   render() {
     return (
-      <section className="hero section section--color">
-        <div className="hero__content">
+      <section className="hero">
+        <div className="hero__overlay" />
+        <div className="container">
           <h1>
-            Maturitní ples Bez starostí
+            Maturitní ples bez starostí
             <br />a podle Vašich představ!
           </h1>
           <p>
@@ -12,7 +13,15 @@ export default class extends React.Component {
             vyřizování na nás a my Vám připravíme maturák na míru šitý právě
             Vaší třídě, Vašim požadavkům, Vašemu finančnímu rozpočtu!
           </p>
-          <button>To chci!</button>
+        </div>
+        <div className="hero__more">
+          <a className="btn btn--reverse" href="#">
+            Promo video
+          </a>
+          <a className="btn" href="#">
+            Chci vědět více
+          </a>
+          <div className="divider-vertical" />
         </div>
       </section>
     );

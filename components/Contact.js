@@ -1,81 +1,31 @@
-export default class extends React.Component {
+export default class Contact extends React.Component {
   render() {
     return (
-      <section className="section section--color section--purple" id="kontakt">
-        <div className="section__content">
-          <h1>Kontakt</h1>
-          <p>
-            <a href="mailto:info@bezvamaturak.cz" aria-label="Email">
-              info@bezvamaturak.cz
+      <section className="section section--dark section--contact" id="kontakt">
+        <div className="section__content section__content--left">
+          <div className="container">
+            <h1>Kontakt</h1>
+            <div className="divider-horizontal" />
+            <p>
+              <strong>
+                info@bezvamaturak.cz
+                <br />
+                +420 777 951 118
+              </strong>
+            </p>
+            <p>
+              V případě dotazů nebo objednávek nás kontaktujte na emailu,
+              telefonu, nebo využijte náš kontaktní formulář.
+            </p>
+            <div className="divider-vertical" />
+            <a className="btn" href="#">
+              Mám dotaz
             </a>
-            <br />
-            +420 777 951 118
-          </p>
-          <ul className="social">
-            <li>
-              <a
-                href="https://www.facebook.com/bezvamaturak/"
-                target="_blank"
-                aria-label="Facebook"
-              >
-                <svg viewBox="0 0 430.113 430.114">
-                  <path
-                    d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
-		c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
-		c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z"
-                  />
-                </svg>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCr2znpfl83_CKtNs0MLUoLQ"
-                target="_blank"
-                aria-label="YouTube"
-              >
-                <svg viewBox="0 0 512 512">
-                  <path
-                    d="M490.24,113.92c-13.888-24.704-28.96-29.248-59.648-30.976C399.936,80.864,322.848,80,256.064,80
-			c-66.912,0-144.032,0.864-174.656,2.912c-30.624,1.76-45.728,6.272-59.744,31.008C7.36,138.592,0,181.088,0,255.904
-			C0,255.968,0,256,0,256c0,0.064,0,0.096,0,0.096v0.064c0,74.496,7.36,117.312,21.664,141.728
-			c14.016,24.704,29.088,29.184,59.712,31.264C112.032,430.944,189.152,432,256.064,432c66.784,0,143.872-1.056,174.56-2.816
-			c30.688-2.08,45.76-6.56,59.648-31.264C504.704,373.504,512,330.688,512,256.192c0,0,0-0.096,0-0.16c0,0,0-0.064,0-0.096
-			C512,181.088,504.704,138.592,490.24,113.92z M192,352V160l160,96L192,352z"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/bezvamaturak/"
-                target="_blank"
-                aria-label="Instagram"
-              >
-                <svg viewBox="0 0 512 512">
-                  <path
-                    d="M352,0H160C71.648,0,0,71.648,0,160v192c0,88.352,71.648,160,160,160h192c88.352,0,160-71.648,160-160V160
-			C512,71.648,440.352,0,352,0z M464,352c0,61.76-50.24,112-112,112H160c-61.76,0-112-50.24-112-112V160C48,98.24,98.24,48,160,48
-			h192c61.76,0,112,50.24,112,112V352z"
-                  />
-                  <path
-                    d="M256,128c-70.688,0-128,57.312-128,128s57.312,128,128,128s128-57.312,128-128S326.688,128,256,128z M256,336
-			c-44.096,0-80-35.904-80-80c0-44.128,35.904-80,80-80s80,35.872,80,80C336,300.096,300.096,336,256,336z"
-                  />
-
-                  <circle cx="393.6" cy="118.4" r="17.056" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <p>
-            Bezva maturák s.r.o.
-            <br />
-            IČO: 07031572, sídlem Praha - Žižkov, Chlumova 206/21, PSČ 130 00
-          </p>
-          <footer>
-            <p>2018 &copy; Bezva Maturák s.r.o.</p>
-          </footer>
+            <small>
+              Bezva maturák s.r.o., IČ: 07031572, Chlumova 206/21, 130 00 Praha
+              3
+            </small>
+          </div>
         </div>
       </section>
     );
