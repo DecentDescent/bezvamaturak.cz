@@ -53,8 +53,8 @@ a.btn {
   border-radius: 26px;
   padding: 10px 20px;
   box-sizing: border-box;
-  background: #fff;
-  border: double #fff 4px;
+  background: $color-white;
+  border: double $color-white 4px;
   color: $color-red;
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -64,18 +64,25 @@ a.btn {
   font-size: 14px;
   margin: 30px 5px;
   display: inline-block;
+  line-height: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.35s;
 
   &.btn--reverse {
     background: transparent;
-    border: double #fff 4px;
-    color: #fff;
+    border: double $color-white 4px;
+    color: $color-white;
+  }
+
+  &:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
 }
 
 .divider-vertical {
   width: 1px;
   height: 64px;
-  background: #fff;
+  background: $color-white;
   margin: 0 auto;
   opacity: 0.5;
 }
@@ -83,7 +90,7 @@ a.btn {
 .divider-horizontal {
   width: 64px;
   height: 1px;
-  background: #fff;
+  background: $color-white;
   margin: 0 15px;
   opacity: 0.5;
   display: inline-block;

@@ -44,7 +44,7 @@
   }
 
   &.section--dark {
-    color: #fff;
+    color: $color-white;
   }
 
   &.section--light {
@@ -58,9 +58,9 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    color: #000;
+    color: $color-black;
     .section__content {
-      background: #fff;
+      background: $color-white;
     }
 
     .container {
@@ -133,7 +133,14 @@
 }
 
 .section--testimonials {
-  a.testimonials-nav {
+  .testimonials-carousel__item {
+    display: none;
+    &.testimonials-carousel__item--active {
+      display: block;
+    }
+  }
+
+  & a.testimonials-nav {
     width: 42px;
     height: 42px;
     position: absolute;
@@ -141,15 +148,18 @@
     opacity: 0.5;
     transform: translateY(-50%);
     transition: opacity 0.35s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     svg {
       width: 32px;
       height: 32px;
-      fill: #000;
+      fill: $color-black;
     }
 
     &.testimonials-nav--left {
       left: 20px;
-      transform: rotate(180deg);
+      transform: translateY(-50%) rotate(180deg);
     }
     &.testimonials-nav--right {
       right: 20px;

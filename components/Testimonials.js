@@ -1,4 +1,28 @@
 export default class Testimonials extends React.Component {
+  carouselHandler() {
+    let slidesCount = document.getElementsByClassName(
+      "testimonials-carousel__item"
+    ).length;
+    /* nextSlide() {
+      if(nextSlideID > slidesCount) {
+        nextSlideID = 0;
+      } else {
+        nextSlideID = activeSlideID + 1;
+      }
+    }
+
+    prevSlide() {
+      if(prevSlideID < 0) {
+        prevSlideID = slidesCount;
+      } else {
+        prevSlideID = activeSlideID - 1;
+      }
+    } */
+  }
+
+  componentDidMount() {
+    this.carouselHandler();
+  }
   render() {
     return (
       <section
@@ -9,12 +33,37 @@ export default class Testimonials extends React.Component {
           <div className="container">
             <h1>Reference</h1>
             <div className="divider-horizontal" />
-            <p>
-              „Bezva maturák je parta super lidí, kteří jsou nejlepší ve svých
-              oborech. Připraví Vám nezapomenutelný večer, kde se nebude nikdo
-              nudit a zaslouží si veliké poděkování!”
-            </p>
-            <small>— Michal Albi</small>
+            <div className="testimonials-carousel">
+              <div className="testimonials-carousel__item testimonials-carousel__item--active">
+                <p>
+                  „Bezva maturák je parta super lidí, kteří jsou nejlepší ve
+                  svých oborech. Připraví Vám nezapomenutelný večer, kde se
+                  nebude nikdo nudit a zaslouží si veliké poděkování!”
+                </p>
+                <small>— Michal Albi</small>
+              </div>
+              <div className="testimonials-carousel__item">
+                <p>
+                  „Ne nadarmo se to jmenuje Bezva Maturák. Skvěle odvedená
+                  práce, prostě výborný!”
+                </p>
+                <small>— Marek Svatoň</small>
+              </div>
+              <div className="testimonials-carousel__item">
+                <p>
+                  „Skvelá organizace, se vším jsme byli naprosto spokojení.
+                  Doporučuju všem!”
+                </p>
+                <small>— Petr Fogl</small>
+              </div>
+              <div className="testimonials-carousel__item">
+                <p>
+                  „Děkujeme za pomoc se vším zařízováním a hlavně za pozitivní
+                  přístup!”
+                </p>
+                <small>— Lenka Khrystonko</small>
+              </div>
+            </div>
           </div>
           <a href="#" className="testimonials-nav testimonials-nav--left">
             <svg viewBox="0 0 32.635 32.635">

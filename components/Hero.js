@@ -1,7 +1,7 @@
 export default class Hero extends React.Component {
   render() {
     return (
-      <section className="hero">
+      <section className="hero" id="vitejte">
         <div className="hero__overlay" />
         <div className="container">
           <h1>
@@ -18,7 +18,7 @@ export default class Hero extends React.Component {
           <a className="btn btn--reverse" href="#">
             Promo video
           </a>
-          <a className="btn" href="#">
+          <a className="btn" href="#nabidka">
             Chci vědět více
           </a>
           <div className="divider-vertical" />

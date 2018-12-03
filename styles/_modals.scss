@@ -17,14 +17,14 @@
     position: relative;
     max-width: 850px;
     height: 450px;
-    background: #fff;
+    background: $color-white;
     border-radius: 10px;
 
     .modal__close {
       width: 42px;
       height: 42px;
       border-radius: 100%;
-      background: #fff;
+      background: $color-white;
       position: absolute;
       right: -12px;
       top: -12px;

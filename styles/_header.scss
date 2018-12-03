@@ -13,6 +13,14 @@ header.header {
   .header__logo {
     svg {
       height: 62px;
+
+      .logo-fill {
+        fill: $color-white;
+      }
+
+      .logo-stroke {
+        stroke: $color-white;
+      }
     }
   }
 
@@ -34,7 +42,7 @@ header.header {
         text-transform: uppercase;
         font-size: 14px;
         a {
-          color: #fff;
+          color: $color-white;
           padding: 0px 15px;
           text-decoration: none;
         }
@@ -43,7 +51,7 @@ header.header {
       li.social-item {
         a {
           padding: 0px 10px;
-          color: #fff;
+          color: $color-white;
           text-decoration: none;
           display: flex;
           align-items: center;
@@ -52,7 +60,7 @@ header.header {
           svg {
             width: 18px;
             height: 18px;
-            fill: #fff;
+            fill: $color-white;
           }
         }
 
@@ -71,5 +79,41 @@ header.header {
     @media (max-width: $breakpoint) {
       display: none;
     }
+  }
+
+  &.header--light {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    .header__nav ul {
+      li.nav-item a {
+        color: $color-red;
+      }
+      li.social-item a svg {
+        fill: $color-red;
+      }
+    }
+
+    .header__logo svg .logo-fill {
+      fill: $color-red;
+    }
+    .header__logo svg .logo-stroke {
+      stroke: $color-red;
+    }
+    .divider-horizontal {
+      background: $color-red;
+    }
+  }
+
+  &.header--dark {
+    background: linear-gradient(
+      to bottom,
+      rgba($color-red, 1) 0%,
+      rgba($color-red, 0.5) 60%,
+      rgba($color-red, 0) 100%
+    );
   }
 }
