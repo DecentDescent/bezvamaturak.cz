@@ -10,10 +10,14 @@ $breakpoint: 920px;
 @import "hero";
 @import "section";
 @import "modals";
+@import "media";
 html {
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  &.nav--opened {
+    overflow: hidden;
+  }
 }

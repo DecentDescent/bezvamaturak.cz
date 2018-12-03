@@ -70,14 +70,21 @@ header.header {
           }
         }
       }
-
-      @media (max-width: $breakpoint) {
-        display: none;
-      }
     }
-
-    @media (max-width: $breakpoint) {
+    .menu-on,
+    .menu-off {
       display: none;
+      width: 32px;
+      height: 42px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-left: 20px;
+      svg {
+        width: 32px;
+        height: 32px;
+        fill: $color-white;
+      }
     }
   }
 
@@ -88,11 +95,16 @@ header.header {
       rgba(255, 255, 255, 0) 100%
     );
 
-    .header__nav ul {
-      li.nav-item a {
-        color: $color-red;
+    .header__nav {
+      ul {
+        li.nav-item a {
+          color: $color-red;
+        }
+        li.social-item a svg {
+          fill: $color-red;
+        }
       }
-      li.social-item a svg {
+      .menu-on svg {
         fill: $color-red;
       }
     }

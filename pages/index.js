@@ -8,6 +8,11 @@ import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
 import VideoModal from "../components/VideoModal";
 export default class extends React.Component {
+  state = {
+    modalActive: false,
+    navOpened: false
+  };
+
   handleScroll() {
     var header = document.getElementById("header");
     var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -54,6 +59,24 @@ export default class extends React.Component {
     }
   }
 
+  handleNav = () => {
+    this.setState({
+      navOpened: !this.state.navOpened
+    });
+    if (!this.state.navOpened) {
+      document.body.classList.add("nav--opened");
+    } else {
+      document.body.classList.remove("nav--opened");
+    }
+  };
+
+  handleNavItem = () => {
+    this.setState({
+      navOpened: !this.state.navOpened
+    });
+    document.body.classList.remove("nav--opened");
+  };
+
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
     this.handleScroll();
@@ -62,13 +85,12 @@ export default class extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header handleNav={this.handleNav} handleNavItem={this.handleNavItem} />
         <Hero />
         <Offerings />
         <About />
         <Testimonials />
         <Contact />
-        {/*<VideoModal />*/}
       </div>
     );
   }

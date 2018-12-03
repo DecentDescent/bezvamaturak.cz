@@ -11,7 +11,7 @@ export default class Offerings extends React.Component {
             <div className="divider-horizontal" />
             <p>Bla bla bla lorem ipsum blabla</p>
           </div>
-        </div>{" "}
+        </div>
       </section>
     );
   }

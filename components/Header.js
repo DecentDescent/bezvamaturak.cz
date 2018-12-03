@@ -30,17 +30,17 @@ export default class Header extends React.Component {
           </svg>
         </a>
         <div className="header__nav">
-          <ul>
-            <li className="nav-item">
+          <ul className="nav">
+            <li className="nav-item" onClick={this.props.handleNavItem}>
               <a href="#nabidka">Nabídka</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={this.props.handleNavItem}>
               <a href="#o-nas">O nás</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={this.props.handleNavItem}>
               <a href="#reference">Reference</a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" onClick={this.props.handleNavItem}>
               <a href="#kontakt">Kontakt</a>
             </li>
           </ul>
@@ -78,6 +78,22 @@ C135.661,29.421,132.821,28.251,129.921,28.251z"
               </a>
             </li>
           </ul>
+          <a className="menu-on" onClick={this.props.handleNav}>
+            <svg viewBox="0 0 50 50">
+              <rect y="3" width="50" height="2" />
+              <rect y="17" width="50" height="2" />
+              <rect y="31" width="50" height="2" />
+              <rect y="45" width="50" height="2" />
+            </svg>
+          </a>
+          <a className="menu-off" onClick={this.props.handleNav}>
+            <svg viewBox="0 0 31.112 31.112">
+              <polygon
+                points="31.112,1.414 29.698,0 15.556,14.142 1.414,0 0,1.414 14.142,15.556 0,29.698 1.414,31.112 15.556,16.97 
+	29.698,31.112 31.112,29.698 16.97,15.556 "
+              />
+            </svg>
+          </a>
         </div>
       </header>
     );

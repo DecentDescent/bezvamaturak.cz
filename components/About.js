@@ -25,7 +25,7 @@ export default class About extends React.Component {
               Náš tým
             </a>
           </div>
-        </div>{" "}
+        </div>
         <div className="counter">
           <ul>
             <li>
