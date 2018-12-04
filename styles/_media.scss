@@ -2,11 +2,26 @@
   h1 {
     font-size: 28px;
   }
+
+  h2 {
+    font-size: 21px;
+  }
+
   p  {
     font-size: 16px;
   }
+
   small {
     font-size: 12px;
+  }
+
+  a.btn {
+    height: 34px;
+    border-radius: 26px;
+    padding: 8px 15px;
+    font-size: 13px;
+    margin: 20px 5px;
+    line-height: 10px;
   }
 
   header.header {
@@ -27,6 +42,7 @@
         justify-content: center;
         z-index: 3;
         text-align: center;
+
         li.nav-item {
           font-family: "Lato", sans-serif;
           font-weight: 400;
@@ -34,18 +50,28 @@
           text-transform: uppercase;
           font-size: 22px;
           margin: 25px 0;
+
           a {
             color: $color-red;
             padding: 15px;
+            border-bottom: 1px rgba($color-red, 0) solid;
+            border-top: 1px rgba($color-red, 0) solid;
+            &:hover {
+              border-bottom: 1px rgba($color-red, 0.5) solid;
+              border-top: 1px rgba($color-red, 0.5) solid;
+            }
           }
         }
       }
+
       .divider-horizontal {
         display: none;
       }
+
       .menu-on {
         display: flex;
       }
+
       .menu-off {
         display: none;
       }
@@ -55,6 +81,7 @@
   .section {
     .section__content {
       width: 100%;
+
       &.section__content--left,
       &.section__content--right {
         clip-path: none;
@@ -74,7 +101,6 @@
         display: none;
       }
       .menu-off {
-        margin-right: 15px;
         display: flex;
         z-index: 4;
         svg {
@@ -109,5 +135,9 @@
         }
       }
     }
+  }
+  .team {
+    flex-direction: column;
+    align-items: center;
   }
 }

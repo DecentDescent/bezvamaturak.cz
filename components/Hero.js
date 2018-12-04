@@ -15,7 +15,10 @@ export default class Hero extends React.Component {
           </p>
         </div>
         <div className="hero__more">
-          <a className="btn btn--reverse" href="#">
+          <a
+            className="btn btn--reverse"
+            onClick={() => this.props.modalHandler("modalPromo")}
+          >
             Promo video
           </a>
           <a className="btn" href="#nabidka">

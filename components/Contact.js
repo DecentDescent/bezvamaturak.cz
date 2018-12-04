@@ -18,7 +18,10 @@ export default class Contact extends React.Component {
               telefonu, nebo využijte náš kontaktní formulář.
             </p>
             <div className="divider-vertical" />
-            <a className="btn" href="#">
+            <a
+              className="btn"
+              onClick={() => this.props.modalHandler("modalContact")}
+            >
               Mám dotaz
             </a>
             <small>

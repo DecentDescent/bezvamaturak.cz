@@ -43,8 +43,15 @@ header.header {
         font-size: 14px;
         a {
           color: $color-white;
-          padding: 0px 15px;
+          padding: 10px 15px;
           text-decoration: none;
+          border-bottom: 1px rgba($color-white, 0) solid;
+          border-top: 1px rgba($color-white, 0) solid;
+          transition: border 0.35s;
+          &:hover {
+            border-bottom: 1px rgba($color-white, 0.5) solid;
+            border-top: 1px rgba($color-white, 0.5) solid;
+          }
         }
       }
 
@@ -99,6 +106,12 @@ header.header {
       ul {
         li.nav-item a {
           color: $color-red;
+          border-bottom: 1px rgba($color-red, 0) solid;
+          border-top: 1px rgba($color-red, 0) solid;
+          &:hover {
+            border-bottom: 1px rgba($color-red, 0.5) solid;
+            border-top: 1px rgba($color-red, 0.5) solid;
+          }
         }
         li.social-item a svg {
           fill: $color-red;

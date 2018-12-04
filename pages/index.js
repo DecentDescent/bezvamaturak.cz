@@ -6,11 +6,19 @@ import Offerings from "../components/Offerings";
 import About from "../components/About";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
-import VideoModal from "../components/VideoModal";
+
+import ModalPromo from "../components/ModalPromo";
+import ModalTeam from "../components/ModalTeam";
+import ModalOffering from "../components/ModalOffering";
+import ModalContact from "../components/ModalContact";
+
 export default class extends React.Component {
   state = {
-    modalActive: false,
-    navOpened: false
+    navOpened: false,
+    modalPromo: false,
+    modalTeam: false,
+    modalOffering: false,
+    modalContact: false
   };
 
   handleScroll() {
@@ -25,26 +33,13 @@ export default class extends React.Component {
     var darkElement1Offset = parseInt(darkElement1.offsetTop);
     var darkElement2Height = parseInt(darkElement2.clientHeight);
     var darkElement2Offset = parseInt(darkElement2.offsetTop);
-    /*
-    if (
-      (scrollTop >= darkElement1Offset - 125 &&
-        scrollTop < darkElement1Offset + darkElement1Height) ||
-      (scrollTop >= darkElement2Offset - 125 &&
-        scrollTop < darkElement2Offset + darkElement2Height)
-    ) {
+
+    if (scrollTop < 10) {
+      header.classList.remove("header--light");
+      header.classList.remove("header--dark");
+    } else if (scrollTop >= 10 && scrollTop < heroElementHeight) {
       header.classList.remove("header--light");
       header.classList.add("header--dark");
-    } else if (scrollTop === 0 && scrollTop <= heroElementHeight) {
-      header.classList.remove("header--light");
-      header.classList.remove("header--dark");
-    } else {
-      header.classList.add("header--light");
-      header.classList.remove("header--dark");
-    }*/
-
-    if (scrollTop < heroElementHeight) {
-      header.classList.remove("header--light");
-      header.classList.remove("header--dark");
     } else if (
       (scrollTop >= darkElement1Offset &&
         scrollTop < darkElement1Offset + darkElement1Height) ||
@@ -77,20 +72,74 @@ export default class extends React.Component {
     document.body.classList.remove("nav--opened");
   };
 
+  modalHandler = modalID => {
+    this.setState({
+      [modalID]: true
+    });
+    document.body.classList.add("modal--active");
+  };
+
+  closeModalHandler = () => {
+    this.setState({
+      modalPromo: false,
+      modalTeam: false,
+      modalOffering: false,
+      modalContact: false
+    });
+    document.body.classList.remove("modal--active");
+  };
+
+  escFunction = event => {
+    if (event.keyCode === 27) {
+      this.closeModalHandler();
+    }
+  };
+
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    document.addEventListener("keydown", this.escFunction, false);
     this.handleScroll();
   }
 
   render() {
+    let modalPromoElement;
+    let modalTeamElement;
+    let modalOfferingElement;
+    let modalContactElement;
+
+    if (this.state.modalPromo) {
+      modalPromoElement = (
+        <ModalPromo closeModalHandler={this.closeModalHandler} />
+      );
+    }
+    if (this.state.modalTeam) {
+      modalTeamElement = (
+        <ModalTeam closeModalHandler={this.closeModalHandler} />
+      );
+    }
+    if (this.state.modalOffering) {
+      modalOfferingElement = (
+        <ModalOffering closeModalHandler={this.closeModalHandler} />
+      );
+    }
+    if (this.state.modalContact) {
+      modalContactElement = (
+        <ModalContact closeModalHandler={this.closeModalHandler} />
+      );
+    }
+
     return (
       <div>
         <Header handleNav={this.handleNav} handleNavItem={this.handleNavItem} />
-        <Hero />
-        <Offerings />
-        <About />
+        <Hero modalHandler={this.modalHandler} />
+        <Offerings modalHandler={this.modalHandler} />
+        <About modalHandler={this.modalHandler} />
         <Testimonials />
-        <Contact />
+        <Contact modalHandler={this.modalHandler} />
+        {modalPromoElement}
+        {modalTeamElement}
+        {modalOfferingElement}
+        {modalContactElement}
       </div>
     );
   }

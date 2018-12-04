@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:600&subset=latin-ext");
 $color-red: #fe5196;
 $color-white: #fff;
-$color-black: #000;
+$color-black: #37474f;
 $breakpoint: 920px;
 
 @import "general";
@@ -17,7 +17,7 @@ html {
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  &.nav--opened {
+  &.modal--active {
     overflow: hidden;
   }
 }

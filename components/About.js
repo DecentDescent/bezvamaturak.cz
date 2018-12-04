@@ -21,7 +21,10 @@ export default class About extends React.Component {
               podílejí.
             </p>
             <div className="divider-vertical" />
-            <a className="btn" href="#">
+            <a
+              className="btn"
+              onClick={() => this.props.modalHandler("modalTeam")}
+            >
               Náš tým
             </a>
           </div>
