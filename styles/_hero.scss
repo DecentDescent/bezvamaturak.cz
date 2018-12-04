@@ -21,10 +21,7 @@
     opacity: 0.85;
     position: absolute;
     background: #fe5196;
-    background: -moz-linear-gradient(-45deg, #fe5196 0%, #f77062 100%);
-    background: -webkit-linear-gradient(-45deg, #fe5196 0%, #f77062 100%);
     background: linear-gradient(135deg, #fe5196 0%, #f77062 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe5196', endColorstr='#f77062',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
 
   .hero__more {
