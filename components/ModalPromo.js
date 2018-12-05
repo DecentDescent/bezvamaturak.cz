@@ -16,7 +16,7 @@ export default class ModalPromo extends React.Component {
               <iframe
                 src="https://www.youtube.com/embed/AazDmJxzsr4"
                 frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               />
             </div>

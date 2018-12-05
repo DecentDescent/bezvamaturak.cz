@@ -16,9 +16,9 @@ export default class ModalTeam extends React.Component {
             <div className="team">
               <div className="team__member">
                 <div className="team__member-avatar team__member-avatar--adela" />
-                <h2>Bc. Adéla Marková</h2>
+                <h2>Mgr. Adéla Marková</h2>
                 <p>
-                  jednatelka Bezva Maturáku
+                  jednatelka Bezva maturák s.r.o.
                   <br />
                   +420 777 951 118
                 </p>

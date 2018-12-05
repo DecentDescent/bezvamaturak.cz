@@ -1,8 +1,8 @@
 export default class ModalOffering extends React.Component {
   render() {
     return (
-      <div className="modal" id="modal-offering">
-        <div className="modal__container">
+      <div>
+        <div className="modal__overlay">
           <div className="modal__close" onClick={this.props.closeModalHandler}>
             <svg viewBox="0 0 31.112 31.112">
               <polygon
@@ -10,6 +10,29 @@ export default class ModalOffering extends React.Component {
 	29.698,31.112 31.112,29.698 16.97,15.556 "
               />
             </svg>
+          </div>
+          <div className="modal">
+            <h1>Náš tým</h1>
+            <div className="team">
+              <div className="team__member">
+                <div className="team__member-avatar team__member-avatar--adela" />
+                <h2>Mgr. Adéla Marková</h2>
+                <p>
+                  jednatelka Bezva maturák s.r.o.
+                  <br />
+                  +420 777 951 118
+                </p>
+              </div>
+              <div className="team__member">
+                <div className="team__member-avatar team__member-avatar--katerina" />
+                <h2>Ing. Kateřina Kohoutová</h2>
+                <p>
+                  koordinátorka a organizátorka plesů
+                  <br />
+                  +420 737 177 846
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
