@@ -140,4 +140,37 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .section--offerings ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    li h3 {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .section--offerings ul {
+    grid-template-columns: repeat(3, 1fr);
+    li .offering-avatar {
+      width: 72px;
+      height: 72px;
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .section--offerings ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 360px) {
+  .section--offerings ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

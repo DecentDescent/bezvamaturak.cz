@@ -12,27 +12,8 @@ export default class ModalOffering extends React.Component {
             </svg>
           </div>
           <div className="modal">
-            <h1>Náš tým</h1>
-            <div className="team">
-              <div className="team__member">
-                <div className="team__member-avatar team__member-avatar--adela" />
-                <h2>Mgr. Adéla Marková</h2>
-                <p>
-                  jednatelka Bezva maturák s.r.o.
-                  <br />
-                  +420 777 951 118
-                </p>
-              </div>
-              <div className="team__member">
-                <div className="team__member-avatar team__member-avatar--katerina" />
-                <h2>Ing. Kateřina Kohoutová</h2>
-                <p>
-                  koordinátorka a organizátorka plesů
-                  <br />
-                  +420 737 177 846
-                </p>
-              </div>
-            </div>
+            <h1>{this.props.offeringTitle}</h1>
+            {this.props.offeringContent}
           </div>
         </div>
       </div>

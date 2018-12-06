@@ -1,5 +1,6 @@
 import "../styles/styles.scss";
 import Head from "../components/Head";
+import Preloader from "../components/Preloader";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Offerings from "../components/Offerings";
@@ -18,7 +19,9 @@ export default class extends React.Component {
     modalPromo: false,
     modalTeam: false,
     modalOffering: false,
-    modalContact: false
+    modalContact: false,
+    offeringTitle: "",
+    offeringContent: ""
   };
 
   handleScroll() {
@@ -72,10 +75,16 @@ export default class extends React.Component {
     document.body.classList.remove("nav--opened");
   };
 
-  modalHandler = modalID => {
+  modalHandler = (modalID, params) => {
     this.setState({
       [modalID]: true
     });
+    if (params) {
+      this.setState({
+        offeringTitle: params.offering.title,
+        offeringContent: params.offering.content
+      });
+    }
     document.body.classList.add("modal--active");
   };
 
@@ -100,7 +109,6 @@ export default class extends React.Component {
     document.addEventListener("keydown", this.escFunction, false);
     this.handleScroll();
   }
-
   render() {
     let modalPromoElement;
     let modalTeamElement;
@@ -119,7 +127,11 @@ export default class extends React.Component {
     }
     if (this.state.modalOffering) {
       modalOfferingElement = (
-        <ModalOffering closeModalHandler={this.closeModalHandler} />
+        <ModalOffering
+          closeModalHandler={this.closeModalHandler}
+          offeringTitle={this.state.offeringTitle}
+          offeringContent={this.state.offeringContent}
+        />
       );
     }
     if (this.state.modalContact) {
@@ -130,6 +142,10 @@ export default class extends React.Component {
 
     return (
       <div>
+        {/*
+        <Preloader />
+        */}
+        <Head />
         <Header handleNav={this.handleNav} handleNavItem={this.handleNavItem} />
         <Hero modalHandler={this.modalHandler} />
         <Offerings modalHandler={this.modalHandler} />

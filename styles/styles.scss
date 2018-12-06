@@ -4,7 +4,7 @@ $color-red: #fe5196;
 $color-white: #fff;
 $color-black: #37474f;
 $breakpoint: 920px;
-
+@import "preloader";
 @import "general";
 @import "header";
 @import "hero";
@@ -17,6 +17,7 @@ html {
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+
   &.modal--active {
     overflow: hidden;
   }

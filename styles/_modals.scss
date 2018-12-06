@@ -57,6 +57,7 @@
     }
 
     h1 {
+      font-size: 38px;
       text-transform: uppercase;
       background: linear-gradient(
         to right,
@@ -67,6 +68,19 @@
       -webkit-text-fill-color: transparent;
     }
 
+    p {
+      font-size: 17px;
+      max-width: 60ch;
+      padding: 10px 0;
+    }
+
+    a {
+      color: $color-red;
+      text-decoration: none;
+      &:hover {
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+    }
     .team {
       display: flex;
       align-items: center;

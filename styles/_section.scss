@@ -72,10 +72,57 @@
         max-width: 850px;
       }
     }
+    .btn {
+      color: $color-white;
+      background: $color-red;
+    }
   }
 }
 
 /* Modifiers */
+.section--offerings {
+  padding-bottom: 0;
+  .section__content {
+    padding-bottom: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      cursor: pointer;
+      margin-bottom: 25px;
+      &:hover {
+        h3 {
+          color: $color-red;
+        }
+      }
+      .offering-avatar {
+        width: 84px;
+        height: 84px;
+        background: $color-white;
+        border: 5px $color-red solid;
+        border-radius: 100%;
+        display: inline-block;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .divider-vertical {
+    background-color: $color-red;
+  }
+}
 
 .section--about {
   background: url("/static/img/about.jpg");
