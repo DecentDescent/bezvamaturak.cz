@@ -81,11 +81,9 @@
 
 /* Modifiers */
 .section--offerings {
-  padding-bottom: 0;
   .section__content {
-    padding-bottom: 0;
+    padding: 100px 0 50px 0;
   }
-
   ul {
     list-style: none;
     padding: 20px 0;
@@ -110,11 +108,16 @@
         background: $color-white;
         border: 5px $color-red solid;
         border-radius: 100%;
-        display: inline-block;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 15px;
+
+        svg {
+          fill: $color-red;
+          width: 48px;
+          height: 48px;
+        }
       }
     }
   }
@@ -179,25 +182,38 @@
   }
 }
 
+@keyframes fadeInStay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .section--testimonials {
   .testimonials-carousel__item {
     display: none;
+    padding: 0 30px;
+    opacity: 0;
+
     &.testimonials-carousel__item--active {
       display: block;
+      opacity: 0;
+      animation: fadeInStay 1s forwards;
     }
   }
 
   & a.testimonials-nav {
     width: 42px;
-    height: 42px;
+    top: 0;
+    bottom: 0;
     position: absolute;
-    top: 50%;
     opacity: 0.5;
-    transform: translateY(-50%);
     transition: opacity 0.35s;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     svg {
       width: 32px;
       height: 32px;
@@ -206,7 +222,9 @@
 
     &.testimonials-nav--left {
       left: 20px;
-      transform: translateY(-50%) rotate(180deg);
+      svg {
+        transform: rotate(180deg);
+      }
     }
     &.testimonials-nav--right {
       right: 20px;

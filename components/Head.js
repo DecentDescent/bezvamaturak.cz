@@ -34,7 +34,5 @@ export default ({ title, description, ogImage }) => (
       name="og:image"
       content={ogImage || "/static/img/og/og-main.jpg?v=1"}
     />
-
-    <link rel="stylesheet" href="/_next/static/style.css" />
   </Head>
 );
