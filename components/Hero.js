@@ -9,9 +9,9 @@ export default class Hero extends React.Component {
             <br />a podle Vašich představ!
           </h1>
           <p>
-            Chcete aby Váš ples byl nezapomenutelný a originální? Nechte veškeré
-            vyřizování na nás a my Vám připravíme maturák na míru šitý právě
-            Vaší třídě, Vašim požadavkům, Vašemu finančnímu rozpočtu!
+            Chcete, aby byl váš ples nezapomenutelný a originální? Nechte
+            veškeré starosti na nás a my připravíme maturák na míru šitý vaší
+            třídě, požadavkům i finančnímu rozpočtu!
           </p>
         </div>
         <div className="hero__more">

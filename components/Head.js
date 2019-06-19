@@ -12,7 +12,7 @@ export default ({ title, description, ogImage }) => (
       name="description"
       content={
         description ||
-        "Chcete aby Váš ples byl nezapomenutelný a originální? Nechte veškeré vyřizování na nás a my Vám připravíme maturák na míru šitý právě Vaší třídě, Vašim požadavkům, Vašemu finančnímu rozpočtu!"
+        "Chcete, aby byl váš ples nezapomenutelný a originální? Nechte veškeré starosti na nás a my připravíme maturák na míru šitý vaší třídě, požadavkům i finančnímu rozpočtu!"
       }
     />
     <meta
@@ -23,7 +23,7 @@ export default ({ title, description, ogImage }) => (
       property="og:description"
       content={
         description ||
-        "Chcete aby Váš ples byl nezapomenutelný a originální? Nechte veškeré vyřizování na nás a my Vám připravíme maturák na míru šitý právě Vaší třídě, Vašim požadavkům, Vašemu finančnímu rozpočtu!"
+        "Chcete, aby byl váš ples nezapomenutelný a originální? Nechte veškeré starosti na nás a my připravíme maturák na míru šitý vaší třídě, požadavkům i finančnímu rozpočtu!"
       }
     />
     <meta name="twitter:card" content="summary" />

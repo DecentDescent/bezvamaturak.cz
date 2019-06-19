@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,300i&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&subset=latin-ext");
 @import url("https://fonts.googleapis.com/css?family=Oswald:600&subset=latin-ext");
 $color-red: #fe5196;
 $color-white: #fff;
@@ -11,6 +11,7 @@ $breakpoint: 920px;
 @import "section";
 @import "modals";
 @import "media";
+
 html {
   scroll-behavior: smooth;
 }

@@ -2,7 +2,7 @@ const testimonialsData = [
   {
     text:
       "Bezva maturák je parta super lidí, kteří jsou nejlepší ve svých oborech. Připraví Vám nezapomenutelný večer, kde se nebude nikdo nudit a zaslouží si veliké poděkování!",
-    name: "Michal Albi"
+    name: "Michal Albl"
   },
   {
     text:

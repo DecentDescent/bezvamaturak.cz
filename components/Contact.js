@@ -13,15 +13,9 @@ export default class Contact extends React.Component {
                 +420 777 951 118
               </strong>
             </p>
-            <p>
-              V případě dotazů nebo objednávek nás kontaktujte na emailu,
-              telefonu, nebo využijte náš kontaktní formulář.
-            </p>
+            <p>Pro objednávky či případné dotazy nás neváhejte kontaktovat:</p>
             <div className="divider-vertical" />
-            <a
-              className="btn"
-              onClick={() => this.props.modalHandler("modalContact")}
-            >
+            <a className="btn" href="mailto:info@bezvamaturak.cz">
               Mám dotaz
             </a>
             <small>

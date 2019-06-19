@@ -8,17 +8,17 @@ export default class About extends React.Component {
             <div className="divider-horizontal" />
             <p>
               Jsme parta bezva mladých lidí s profesionálními zkušenostmi ve
-              svém oboru, se spoustou nápadů a elánem pro práci ve dne v noci. S
-              pořádáním společenských akcí včetně maturitních plesů máme bohaté
-              a dlouholeté zkušenosti. Každý z nás stojí za službou, bez které
-              se na svém maturitním plese neobejdete. Díky tomuto spojení jsme
-              schopni Vám vytvořit Bezva Maturák dle Vašich představ.
+              svém oboru, se spoustou nápadů a elánem pro práci ve dne i v noci.
+              S pořádáním společenských akcí, a především maturitních plesů,
+              máme bohaté a dlouholeté zkušenosti. Náš tým se navzájem obohacuje
+              o nápady a zkušenosti ze svých oborů, a tak jsme schopni odstranit
+              veškeré nedostatky, které mohou plesu ubrat na jeho výjimečnosti.
+              Děláme práci, která nás baví, naplňuje a nabíjí energií, právě tu
+              dáváme zpět každému individuálnímu projektu.
             </p>
             <p>
-              Náš tým se navzájem obohacuje o své nápady a zkušenosti ze svého
-              oboru. Díky tomu doplňujeme mezery, které na plesech často
-              vznikají kvůli nespolupráci lidí, kteří se na organizaci plesu
-              podílejí.
+              Díky tomu jsme vám schopni vytvořit Bezva Maturák přesně podle
+              Vašich představ.
             </p>
             <div className="divider-vertical" />
             <a
@@ -36,7 +36,7 @@ export default class About extends React.Component {
               <span className="counter__label">plesů</span>
             </li>
             <li>
-              <span className="counter__number">2 200</span>
+              <span className="counter__number">2 000</span>
               <span className="counter__label">maturantů</span>
             </li>
             <li>

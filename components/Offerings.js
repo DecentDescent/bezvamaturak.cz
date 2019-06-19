@@ -47,30 +47,25 @@ const offeringsData = [
     content: (
       <div>
         <p>
-          <strong>
-            Jak probíhá služba organizace a koordinace Vašeho plesu?
-          </strong>
+          <strong>Jak probíhá organizace a koordinace vašeho plesu?</strong>
         </p>
         <p>
-          Náš koordinátor Vás navštíví ve třídě a probere s Vámi Vaše představy,
-          požadavky a získá od Vás základní informace k Vašemu plesu. Následně
-          Vám připraví nabídku služeb s cenami, které jsou pro maturanty
-          většinou klíčové, představí Vám své nápady k Vašemu plesu a danému
-          tématu. Dále se s Vámi náš koordinátor bude potkávat dle Vašich
-          potřeb, bude na telefonu a kdykoliv Vám bude k dispozici zodpovědět
-          Vaše dotazy.
+          Setkání s naším koordinátorem proběhne přímo u vás ve třídě, jemu
+          sdělíte své požadavky, představy a přání.
         </p>
         <p>
-          Koordinace na plese je výhrou a to doslova. Náš koordinátor Vám bude k
-          dispozici od příprav po konec plesu, bude za Vás řešit případné
-          problémy, které na plesech někdy nastávají. Dále bude komunikovat s
-          účinkujícími, zajišťovat bezproblémový průběh plesu, postará se o
-          doprovodný a zábavný program pro diváky a další věci, které oceníte.
+          Následně vám bude představena nabídka služeb a cen spolu s nápady
+          koordinátora, které jsou podloženy bohatými zkušenostmi.
         </p>
         <p>
-          Zeptejte se svých spolužáků, kteří svůj ples organizovali, zda by
-          bývali raději nenechali tuto činnost na někom zkušeným a svůj velký
-          den si užili na plno a bez starostí.
+          Náš koordinátor vám bude k dispozici na pravidelných schůzkách, bude
+          také připraven kdykoliv odpovědět na vaše dotazy telefonicky nebo
+          e-mailem.
+        </p>
+        <p>
+          Koordinátor se postará o doprovodný a zábavný program, bude zajišťovat
+          komunikaci s účinkujícími a řešit nečekané problémy, které mohou během
+          plesu nastat. Zkrátka zajistí bezproblémový průběh celého plesu.
         </p>
       </div>
     )
@@ -177,17 +172,21 @@ const offeringsData = [
     content: (
       <div>
         <p>
-          Maturitní předtančení je jedním z nejdůležitějších bodů Vašeho plesu.
-          Právě předtančení zahajuje ples a pokud má opravdu šťávu, lidé o tom
-          hovoří nejen na plese, ale ještě dlouho, dlouho po něm. Naším cílem je
-          brát každou třídu a jejich téma jako unikát, něco, co se neopakuje po
-          minulých ročnících, tak jak to někdy bývá. Nebojíme se experimentovat
-          s kulisami a akrobatickými prvky. Naši maturanti chodí na lekce vždy
-          nadšení a po čase se některým tanec stane závislostí.
+          <strong>Co můžete čekat od naší choreografie?</strong>
         </p>
         <p>
-          Snažíme se naše choreografie dělat velmi pestré, zábavné, propracované
-          a především originální.
+          Maturitní předtančení je jedním z nejdůležitějších bodů celého večera,
+          proto by mělo být skutečně originální, zábavné a epické.
+        </p>
+        <p>
+          Pod odborným vedením společně sestavíme takovou choreografii, která
+          bude přesně odpovídat tématu plesu a bude bavit diváky, ale i vás.
+        </p>
+        <p>Nebojíme se experimentovat ani s kulisami a akrobatickými prvky. </p>
+        <p>Naše lekce jsou navíc kreativní, plné zábavy a energie. </p>
+        <p>
+          Všechny naše choreografie jsou pestré a propracované do posledního
+          detailu, tak aby měly co největší šťávu.
         </p>
       </div>
     )
@@ -265,7 +264,8 @@ const offeringsData = [
         <p>
           Kapela je nepostradatelnou součástí maturitních plesů. Chcete se dobře
           bavit na pořádné hity a protančit celou noc? Pak neváhejte a
-          kontaktujte nás pro více informací.
+          kontaktujte nás. Zařídíme vám hudební doprovod přesně podle vašeho
+          gusta.
         </p>
       </div>
     )
@@ -321,31 +321,38 @@ const offeringsData = [
     content: (
       <div>
         <p>
-          <strong>Nabízíme Vám kompletní fotoslužby, které obsahují:</strong>
+          Ve stáří si velmi rádi prohlédnete fotky ze svého maturitního plesu,
+          na kterých jste mladí a plní energie. Připomenete si tento
+          nezapomenutelný večer. Proto vám nabízíme kompletní fotoslužby:
         </p>
         <p>
-          Veškeré fotografie z Vašeho plesu – možnost stažení z úschovny,
-          předání na DVD nebo USB flash disk. maturitní tablo včetně grafického
-          zpracování (využíváme služeb portrétové fotografky, Vašeho fotky jsou
-          tedy dokonalé a vy na nich také) fotokoutek (v rámci focení plesu Vám
-          nabídneme fotokoutek ZDARMA)
-        </p>
-        <p>
-          + Vaše fotografie jsou do druhého dne na našich facebook stránkách
+          Veškeré fotografie z vašeho plesu – možnost stažení z úschovny,
+          předání na DVD nebo USB flash disk.
+          <br />
+          Maturitní tablo včetně grafického zpracování (využíváme služeb
+          portrétové fotografky, vaše fotky jsou tedy dokonalé a vy na nich
+          také).
+          <br />
+          Fotokoutek (v rámci focení plesu vám nabídneme fotokoutek ZDARMA).
+          <br />
+          Vaše fotografie budou do druhého dne na našich facebookových
+          <br />
+          stránkách.
         </p>
         <hr />
         <p>
-          <strong>Nabízíme Vám následující videoslužby:</strong>
-          <br />
-          Natočení promo-videa
-          <br />
-          Záznam z plesu – editovaný klip 3-6 min.
-          <br />
-          Záznam z plesu – editovaný klip 25-50 min.
+          <strong>Pojďme zbořit YouTube!</strong> Nabízíme kompletní
+          videoslužby:
         </p>
         <p>
-          <strong>Videoslužby obsahují:</strong>
+          Natočení promo-videa
           <br />
+          Záznam z plesu – editovaný klip 3-6 min
+          <br />
+          Záznam z plesu – editovaný klip 25-50 min
+        </p>
+        <p>Videoslužby obsahují:</p>
+        <p>
           Vícekamerové natáčení FULL HD (2x kameraman)
           <br />
           1x USB flash disk do třídy
@@ -373,14 +380,15 @@ const offeringsData = [
     content: (
       <div>
         <p>
-          <strong>
-            Grafické zpracování a tisk maturitních lístků, pozvánek a plakátů
-          </strong>
+          <strong>Dejte všem vědět, co se chystá!</strong>
         </p>
         <p>
-          Nabízíme Vám grafické zpracování maturitních lístků, pozvánek a
-          plakátů. Vše přizpůsobíme Vašim představám a požadavkům. Dále Vám
-          nabídneme velmi nízkou cenu za tisk. Rádi Vám zašleme cenovou nabídku.
+          Nabízíme vám grafické zpracování maturitních lístků, pozvánek a
+          plakátů přesně přizpůsobených vašim požadavkům a nápadům.
+        </p>
+        <p>
+          Můžete využít naší nabídky tisku těchto materiálů za velmi nízké ceny.
+          Vše naleznete v přehledné cenové nabídce.
         </p>
       </div>
     )
@@ -464,9 +472,10 @@ const offeringsData = [
     content: (
       <div>
         <p>
-          Moderátor je jedna z nejdůležitějších osob na maturitním plese.
-          Provází Vás celým večerem a proto je důležité ho správně vybrat. Pokud
-          chcete vtipného, pohotového a milého moderátora, víme jak na to.
+          Podobně jako kapela je klíčovým prvkem vydařeného maturitního plesu i
+          správný moderátor. Svěřte moderování svého plesu někomu, kdo je
+          vtipný, pohotový a dokáže udržet rozjeté tempo po celý večer. Pár
+          takových na skladu máme. Neváhejte se zeptat.
         </p>
       </div>
     )
@@ -517,11 +526,11 @@ const offeringsData = [
     content: (
       <div>
         <p>
-          <strong>Chcete ušetřit, ale zároveň mít z čeho vybírat?</strong>
-        </p>
-        <p>
-          Nabízíme šerpy atlasové, taftové, třpytivé, saténové a vyšívané.
-          Veškeré Vaše přání je naším rozkazem.
+          Co by to bylo za absolventa maturitního plesu, kdyby nebyl šerpovaný a
+          neměl v ruce sklenku svého oblíbeného drinku. Zařídíme vám skleničky i
+          šerpy a věřte, že je z čeho vybírat. Jen u šerp můžete volit atlasové,
+          taftové, třpytivé, saténové nebo vyšívané, zkrátka fantazii se meze
+          nekladou.
         </p>
       </div>
     )
@@ -595,33 +604,49 @@ const offeringsData = [
     content: (
       <div>
         <p>
-          <strong>Výzdoba plesu</strong>
+          <strong>Výzdoba</strong>
         </p>
         <p>
-          Každý ples je originál, proto je potřeba Vaše představy a požadavky
-          projednat předem. Stačí nám zadat téma, Váš rozpočet, který na výzdobu
-          máte a my Vám připravíme návrhy, které si předem ve třídě odhlasujete.
-          Váš ples musí být jedinečný a to my umíme.
+          Výzdoba je základem každého maturitního plesu. Díky ní uděláte
+          z všedního sálu místo, které se stane dějištěm nejlepšího večera
+          vašeho života.
+        </p>
+
+        <p>
+          Každý ples je originál, proto je potřeba vaše představy a požadavky
+          projednat předem.
         </p>
         <p>
-          <strong>Květiny s dovozem na Váš ples</strong>
+          Stačí nám zadat téma, rozpočet, který na výzdobu máte, a my pro vás
+          připravíme návrhy, které si předem ve třídě odhlasujete.
+        </p>
+        <p>Váš ples musí být jedinečný a to my umíme.</p>
+        <p>
+          <strong>Květiny s dovozem</strong>
         </p>
         <p>
-          Rádi Vám zajistíme dle Vašich představ květiny, které si sami
-          vyberete. Pomůžeme Vám sestavit pro třídní profesorku a profesorský
-          sbor velký puket květin, které jsou čerstvé a nezvadnou do druhého
-          dne. Rádi Vám předem ukážeme na fotografií jak Váš puket bude vypadat,
-          abyste následně nebyli zklamání z velikosti, barvy, atd.
+          Mnoho tříd na květiny zapomíná, ale je snad lepší způsob, jak říct
+          vaší oblíbené paní učitelce děkuji?
+        </p>
+
+        <p>
+          Zajistíme vám květiny, které si sami vyberete. Pro vaši třídní
+          učitelku a učitelský sbor pomůžeme sestavit krásné kytice, které budou
+          jasně říkat, jak moc si jich vážíte.
         </p>
         <p>
-          Veškeré květiny Vám dovezeme v den Vašeho plesu čerstvé s vodou přímo
-          na místo konání. Nebudete mít žádné starosti.
+          Rádi vám předem ukážeme, jak budou vaše květiny vypadat, abyste měli
+          jasnou představu, čím budete učitele obdarovávat.
+        </p>
+        <p>
+          Veškeré květiny vám dovezeme v den vašeho plesu čerstvé, přímo na
+          místo konání.
         </p>
       </div>
     )
   },
   {
-    title: "Dárky do tomboly",
+    title: "Tombola",
     avatar: (
       <svg viewBox="0 0 480 480">
         <path
@@ -644,14 +669,18 @@ const offeringsData = [
     content: (
       <div>
         <p>
-          <strong>Pomůžeme Vám do tomboly sehnat zajímavé dárky a ceny</strong>
+          Tombolu miluje každý a na plese by neměla nikdy chybět. Je to navíc
+          způsob, jak se vám mohou peníze vložené do realizace plesu částečně
+          vrátit.
         </p>
-
+        <p>Pomůžeme vám do tomboly sehnat zajímavé dárky a ceny.</p>
         <p>
-          Víte kolik peněz mohou maturanti získat za prodej tomboly? Rádi Vám
-          pomůžeme tombolu postavit tak, aby se všechny lístky prodaly.
+          Rádi vám pomůžeme tombolu uspořádat tak, aby se všechny lístky
+          prodaly.
         </p>
-
+        <p>
+          Poradíme vám, kolik peněz mohou maturanti získat za prodej tomboly.
+        </p>
         <p>
           Dárky do tomboly poskytujeme pouze třídám, které si u nás objednají
           minimálně dvě z následujících služeb – organizace na míru,
@@ -673,18 +702,18 @@ const offeringsData = [
       <div>
         <p>
           <strong>
-            Máme pro Vás připravenou luxusní nabídku maturitních šatů od známých
-            návrhářů
+            Máme pro vás připravenou luxusní nabídku maturitních šatů od známých
+            návrhářů.
           </strong>
         </p>
         <p>
-          Kompletní nabídku naleznete na{" "}
+          Kompletní nabídku naleznete na
           <a href="http://victorysalon.cz" target="_blank">
             www.victorysalon.cz
           </a>
         </p>
         <p>
-          S námi získáte až{" "}
+          S námi získáte až
           <strong>400,- Kč slevu na zapůjčení společenských šatů</strong>
           <small>
             Slevu poskytujeme pouze třídám, které si u nás objednají minimálně
@@ -780,7 +809,12 @@ const offeringsData = [
     ),
     content: (
       <div>
-        <p>Užijte si na svém plese jedinečný poslech ze všech stran.</p>
+        <p>
+          Kapela sice hraje, ale je špatně slyšet! Jedna z nejčastějších chyb
+          maturitních plesů. Nechte nás zajistit pořádné ozvučení, díky kterému
+          uslyší hudbu i vaše babičky a nebudou ani vteřinu váhat, aby si
+          zatančily jako zamlada.
+        </p>
       </div>
     )
   },
@@ -843,7 +877,13 @@ const offeringsData = [
     ),
     content: (
       <div>
-        <p>Užijte si na svém plese jedinečný poslech ze všech stran.</p>
+        <p>
+          Aby měl váš maturitní ples co nejlepší atmosféru, je zapotřebí
+          vytvořit i jedinečné osvětlení sálu. Nechte jej na nás a uvidíte, že
+          celý sál prosytí atmosféra, která bude skvěle dokreslovat téma vašeho
+          plesu, jednotlivá zábavná vystoupení i dojemné momenty spojené přímo
+          s vámi.
+        </p>
       </div>
     )
   }
