@@ -10,7 +10,8 @@ const nextConfig = {
     };
 
     return config;
-  }
+  },
+  target: "serverless"
 };
 
 module.exports = withPlugins([withCSS, withSass], nextConfig);
